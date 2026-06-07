@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>महाशिवरात्रि आशीर्वाद 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Hind:wght@400;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hind', 'Tiro Devanagari Hindi', sans-serif;
+            background: linear-gradient(to bottom, #1e1b4b, #581c87, #9a3412);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Sacred Symbols Particles */
+        .particle {
+            position: absolute;
+            font-size: 20px;
+            pointer-events: none;
+            animation: float-up 15s linear infinite;
+            font-weight: bold;
+        }
+
+        .particle.om {
+            color: #fde047;
+            text-shadow: 0 0 10px #fde047;
+        }
+
+        .particle.swastik {
+            color: #fb923c;
+            text-shadow: 0 0 10px #fb923c;
+        }
+
+        @keyframes float-up {
+            0% { 
+                transform: translateY(100vh) rotate(0deg); 
+                opacity: 0; 
+            }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { 
+                transform: translateY(-100vh) rotate(360deg); 
+                opacity: 0; 
+            }
+        }
+
+        /* Glows */
+        .glow-1 {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 400px;
+            height: 400px;
+            background: rgba(59, 130, 246, 0.2);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .glow-2 {
+            position: absolute;
+            bottom: 25%;
+            right: 25%;
+            width: 400px;
+            height: 400px;
+            background: rgba(249, 115, 22, 0.2);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: pulse 4s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            padding-bottom: 100px; /* Extra space for fixed brand banner */
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fade-in 1s ease-out;
+        }
+
+        .header-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .star-icon {
+            font-size: 40px;
+            animation: pulse-star 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-star {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+
+        .main-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 700;
+            background: linear-gradient(90deg, #fb923c, #fde047, #fb923c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            line-height: 1.3;
+            padding: 10px 0;
+            display: inline-block;
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: #fed7aa;
+            font-weight: 600;
+        }
+
+        /* Divine Figures Container */
+        .divine-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            margin-bottom: 50px;
+            border-radius: 24px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.4), rgba(109, 40, 217, 0.4), rgba(154, 52, 18, 0.4));
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(250, 204, 21, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            perspective: 1500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .divine-figure {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+        }
+
+        /* Main Divine Image with 3D Effects */
+        .main-divine-image {
+            position: relative;
+            width: 450px;
+            height: 400px;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 
+                0 30px 80px rgba(0, 0, 0, 0.7),
+                0 0 60px rgba(250, 204, 21, 0.4),
+                inset 0 0 30px rgba(255, 255, 255, 0.1);
+            border: 3px solid rgba(250, 204, 21, 0.5);
+            animation: gentle-float-main 4s ease-in-out infinite;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes gentle-float-main {
+            0%, 100% { 
+                transform: translateY(0) translateZ(0) rotateX(0deg);
+            }
+            50% { 
+                transform: translateY(-20px) translateZ(20px) rotateX(2deg);
+            }
+        }
+
+        .main-divine-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(1.05) contrast(1.1) saturate(1.15);
+            display: block;
+        }
+
+        .divine-glow {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background: radial-gradient(circle at center, rgba(250, 204, 21, 0.4), rgba(147, 51, 234, 0.3), transparent 70%);
+            border-radius: 30px;
+            filter: blur(25px);
+            z-index: -1;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        /* Hide old image wrappers */
+        .divine-image-wrapper {
+            display: none;
+        }
+
+        @keyframes gentle-float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-15px) scale(1.02); }
+        }
+
+        /* Om Symbol */
+        .om-symbol {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: #fde047;
+            opacity: 0.8;
+            text-shadow: 0 0 30px #fde047;
+            animation: rotate-om 8s linear infinite;
+            z-index: 5;
+        }
+
+        @keyframes rotate-om {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Dance Animations */
+        .dance-1 .divine-figure {
+            animation: dance-sway 3s ease-in-out infinite;
+        }
+
+        @keyframes dance-sway {
+            0%, 100% { transform: rotate(-5deg) translateY(0); }
+            50% { transform: rotate(5deg) translateY(-20px); }
+        }
+
+        .dance-2 .divine-figure {
+            animation: dance-spin 3s ease-in-out infinite;
+        }
+
+        @keyframes dance-spin {
+            0%, 100% { transform: rotateY(0deg) scale(1); }
+            50% { transform: rotateY(180deg) scale(1.1); }
+        }
+
+        .dance-3 .divine-figure {
+            animation: dance-bounce 3s ease-in-out infinite;
+        }
+
+        @keyframes dance-bounce {
+            0%, 100% { transform: translateY(0) scale(1); }
+            25% { transform: translateY(-40px) scale(1.05); }
+            75% { transform: translateY(-10px) scale(0.98); }
+        }
+
+        .dance-4 .divine-figure {
+            animation: dance-wave 3s ease-in-out infinite;
+        }
+
+        @keyframes dance-wave {
+            0%, 100% { transform: translateX(0) rotate(0deg); }
+            25% { transform: translateX(-20px) rotate(-10deg); }
+            75% { transform: translateX(20px) rotate(10deg); }
+        }
+
+        .canvas-label {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(250, 204, 21, 0.5);
+            z-index: 10;
+        }
+
+        .canvas-label p {
+            color: #fde047;
+            font-family: 'Hind', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Form Container */
+        .form-container {
+            background: linear-gradient(135deg, rgba(124, 45, 18, 0.6), rgba(109, 40, 217, 0.6), rgba(30, 58, 138, 0.6));
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 50px 40px;
+            border: 2px solid rgba(250, 204, 21, 0.4);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fade-in 1.2s ease-out;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-title {
+            font-family: 'Hind', sans-serif;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: #fde047;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .form-description {
+            color: #fed7aa;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-label {
+            display: block;
+            color: #fef3c7;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 18px 24px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(250, 204, 21, 0.5);
+            border-radius: 15px;
+            color: white;
+            font-size: 1.2rem;
+            font-family: 'Hind', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #fde047;
+            box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.2);
+        }
+
+        .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px 32px;
+            background: linear-gradient(90deg, #f97316, #facc15, #f97316);
+            border: none;
+            border-radius: 15px;
+            color: #1c1917;
+            font-family: 'Hind', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(249, 115, 22, 0.6);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .form-footer {
+            margin-top: 25px;
+            text-align: center;
+            color: #fed7aa;
+            font-size: 1rem;
+        }
+
+        /* Blessing Container */
+        .blessing-container {
+            background: linear-gradient(135deg, rgba(120, 53, 15, 0.6), rgba(154, 52, 18, 0.6), rgba(153, 27, 27, 0.6));
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 50px 40px;
+            border: 2px solid rgba(250, 204, 21, 0.6);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fade-in 1s ease-out;
+            display: none;
+        }
+
+        .blessing-container.show {
+            display: block;
+        }
+
+        .blessing-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .blessing-emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .blessing-title {
+            font-family: 'Hind', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #fef3c7;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .blessing-message-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 35px 30px;
+            border: 1px solid rgba(250, 204, 21, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .blessing-message {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            color: #fef3c7;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .blessing-footer {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .blessing-footer p {
+            color: #fed7aa;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .reset-btn {
+            display: block;
+            margin: 0 auto;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-family: 'Hind', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        .reset-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.6);
+        }
+
+        .blessing-note {
+            margin-top: 25px;
+            text-align: center;
+            color: #fde047;
+            font-size: 1rem;
+            animation: pulse-text 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-text {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .page-footer {
+            text-align: center;
+            margin-top: 40px;
+            color: rgba(251, 146, 60, 0.8);
+            font-size: 1.1rem;
+        }
+
+        /* Scrolling Brand Banner */
+        .brand-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(30, 27, 75, 0.95), rgba(0, 0, 0, 0.9));
+            border-top: 2px solid rgba(250, 204, 21, 0.4);
+            padding: 15px 0;
+            overflow: hidden;
+            z-index: 1000;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .brand-ticker {
+            display: flex;
+            animation: scroll-left 20s linear infinite;
+            white-space: nowrap;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .brand-item {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 60px;
+            font-family: 'Hind', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fde047;
+            text-shadow: 0 0 10px rgba(253, 224, 71, 0.5);
+        }
+
+        .brand-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        .brand-separator {
+            color: rgba(251, 146, 60, 0.6);
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-container.hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .divine-container {
+                height: 400px;
+                padding: 20px;
+            }
+            
+            .main-divine-image {
+                width: 300px;
+                height: 280px;
+            }
+            
+            .om-symbol {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+    <div id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-icons">
+                <span class="star-icon">⭐</span>
+                <h1 class="main-title">महाशिवरात्रि</h1>
+                <span class="star-icon">⭐</span>
+            </div>
+            <p class="subtitle">महाशिवरात्रि आशीर्वाद 2026</p>
+        </div>
+
+        <!-- Divine Figures -->
+        <div class="divine-container" id="divine-scene">
+            <!-- Main Divine Image of Shiv-Parvati -->
+            <div class="divine-figure">
+                <div class="divine-glow"></div>
+                <div class="main-divine-image">
+                    <img src="data:image/jpeg;base64,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" alt="भगवान शिव और माता पार्वती">
+                </div>
+            </div>
+
+            <!-- Om Symbol -->
+            <div class="om-symbol">ॐ</div>
+
+            <div class="canvas-label">
+                <p>🕉️ भगवान शिव और माता पार्वती 🕉️</p>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-container" id="form-section">
+            <div class="form-header">
+                <h2 class="form-title">अपना दिव्य आशीर्वाद प्राप्त करें</h2>
+                <p class="form-description">
+                    भगवान शिव और माता पार्वती से व्यक्तिगत आशीर्वाद पाने के लिए अपना नाम दर्ज करें
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">आपका नाम</label>
+                <input 
+                    type="text" 
+                    id="user-name" 
+                    class="form-input" 
+                    placeholder="अपना नाम यहाँ लिखें..."
+                >
+            </div>
+
+            <button type="button" class="submit-btn" onclick="getBlessing()">
+                आशीर्वाद प्राप्त करें 🙏
+            </button>
+
+            <div class="form-footer">
+                <p>🪔 हर हर महादेव 🪔</p>
+            </div>
+        </div>
+
+        <!-- Blessing -->
+        <div class="blessing-container" id="blessing-section">
+            <div class="blessing-header">
+                <div class="blessing-emoji">🙏</div>
+                <h2 class="blessing-title">आपके लिए दिव्य संदेश</h2>
+            </div>
+
+            <div class="blessing-message-box">
+                <p class="blessing-message" id="blessing-text"></p>
+            </div>
+
+            <div class="blessing-footer">
+                <p>🕉️ आप पर शांति, समृद्धि और आध्यात्मिक जागृति का आशीर्वाद हो 🕉️</p>
+            </div>
+
+            <button class="reset-btn" onclick="reset()">एक और आशीर्वाद लें</button>
+
+            <div class="blessing-note">
+                <p>✨ देवता आपके साथ उत्सव मनाते हैं ✨</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="page-footer">
+            <p>शुभ महाशिवरात्रि 2026 🙏 ॐ नमः शिवाय</p>
+        </div>
+    </div>
+
+    <!-- Scrolling Brand Banner -->
+    <div class="brand-banner">
+        <div class="brand-ticker">
+            <!-- First set -->
+            <div class="brand-item">
+                <span class="brand-icon">🙏</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🙏</span>
+            </div>
+            <span class="brand-separator">•</span>
+            
+            <div class="brand-item">
+                <span class="brand-icon">🔱</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🔱</span>
+            </div>
+            <span class="brand-separator">•</span>
+            
+            <div class="brand-item">
+                <span class="brand-icon">🕉️</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🕉️</span>
+            </div>
+            <span class="brand-separator">•</span>
+            
+            <div class="brand-item">
+                <span class="brand-icon">🌸</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🌸</span>
+            </div>
+            <span class="brand-separator">•</span>
+
+            <!-- Duplicate set for seamless loop -->
+            <div class="brand-item">
+                <span class="brand-icon">🙏</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🙏</span>
+            </div>
+            <span class="brand-separator">•</span>
+            
+            <div class="brand-item">
+                <span class="brand-icon">🔱</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🔱</span>
+            </div>
+            <span class="brand-separator">•</span>
+            
+            <div class="brand-item">
+                <span class="brand-icon">🕉️</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🕉️</span>
+            </div>
+            <span class="brand-separator">•</span>
+            
+            <div class="brand-item">
+                <span class="brand-icon">🌸</span>
+                <span>Abhishek Dixit की तरफ से आपको महाशिवरात्रि की हार्दिक शुभकामनाएं</span>
+                <span class="brand-icon">🌸</span>
+            </div>
+            <span class="brand-separator">•</span>
+        </div>
+    </div>
+
+    <script>
+        // Hindi name meanings database
+        var nameMeanings = {
+            'अभिषेक': 'अभिषेक का अर्थ है पवित्र जल से स्नान - आप शुद्धता और दिव्यता के प्रतीक हैं',
+            'abhishek': 'अभिषेक का अर्थ है पवित्र जल से स्नान - आप शुद्धता और दिव्यता के प्रतीक हैं',
+            'अर्जुन': 'अर्जुन का अर्थ है उज्ज्वल और तेजस्वी - आप महान योद्धा की तरह हैं',
+            'arjun': 'अर्जुन का अर्थ है उज्ज्वल और तेजस्वी - आप महान योद्धा की तरह हैं',
+            'देव': 'देव का अर्थ है दिव्य और देवतुल्य - आप ईश्वरीय गुणों से सम्पन्न हैं',
+            'dev': 'देव का अर्थ है दिव्य और देवतुल्य - आप ईश्वरीय गुणों से सम्पन्न हैं',
+            'कृष्ण': 'कृष्ण का अर्थ है सर्वाकर्षक और परम दिव्य - आप प्रेम और भक्ति के प्रतीक हैं',
+            'krishna': 'कृष्ण का अर्थ है सर्वाकर्षक और परम दिव्य - आप प्रेम और भक्ति के प्रतीक हैं',
+            'राम': 'राम का अर्थ है सुखद और मनोहर - आप धर्म के मूर्तिमान स्वरूप हैं',
+            'ram': 'राम का अर्थ है सुखद और मनोहर - आप धर्म के मूर्तिमान स्वरूप हैं',
+            'शिव': 'शिव का अर्थ है मंगलकारी - आप स्वयं परमात्मा के नाम से नामित हैं',
+            'shiv': 'शिव का अर्थ है मंगलकारी - आप स्वयं परमात्मा के नाम से नामित हैं',
+            'आदित्य': 'आदित्य का अर्थ है सूर्य - आप प्रकाश और जीवनदायी ऊर्जा के स्रोत हैं',
+            'aditya': 'आदित्य का अर्थ है सूर्य - आप प्रकाश और जीवनदायी ऊर्जा के स्रोत हैं',
+            'आर्यन': 'आर्यन का अर्थ है कुलीन और श्रेष्ठ - आप महान वंश के हैं',
+            'aryan': 'आर्यन का अर्थ है कुलीन और श्रेष्ठ - आप महान वंश के हैं',
+            'रोहन': 'रोहन का अर्थ है आरोहण करने वाला - आप सदा उन्नति की ओर बढ़ते हैं',
+            'rohan': 'रोहन का अर्थ है आरोहण करने वाला - आप सदा उन्नति की ओर बढ़ते हैं',
+            'राज': 'राज का अर्थ है राजा - आप राजसी और प्रतापी हैं',
+            'raj': 'राज का अर्थ है राजा - आप राजसी और प्रतापी हैं',
+            'विक्रम': 'विक्रम का अर्थ है पराक्रम और वीरता - आप साहसी और निर्भीक हैं',
+            'vikram': 'विक्रम का अर्थ है पराक्रम और वीरता - आप साहसी और निर्भीक हैं',
+            'हर्ष': 'हर्ष का अर्थ है आनंद और खुशी - आप सुख के दाता हैं',
+            'harsh': 'हर्ष का अर्थ है आनंद और खुशी - आप सुख के दाता हैं',
+            'अमित': 'अमित का अर्थ है असीम और अनंत - आपकी संभावनाएं असीमित हैं',
+            'amit': 'अमित का अर्थ है असीम और अनंत - आपकी संभावनाएं असीमित हैं',
+            'राहुल': 'राहुल का अर्थ है सभी दुखों का नाश करने वाला - आप विजयी हैं',
+            'rahul': 'राहुल का अर्थ है सभी दुखों का नाश करने वाला - आप विजयी हैं',
+            'अंकित': 'अंकित का अर्थ है चिह्नित और दिव्य कृपा से अंकित - आप विशिष्ट हैं',
+            'ankit': 'अंकित का अर्थ है चिह्नित और दिव्य कृपा से अंकित - आप विशिष्ट हैं',
+            'रोहित': 'रोहित का अर्थ है लाल और सूर्य की पहली किरण - आप नई शुरुआत के प्रतीक हैं',
+            'rohit': 'रोहित का अर्थ है लाल और सूर्य की पहली किरण - आप नई शुरुआत के प्रतीक हैं',
+            'देवी': 'देवी का अर्थ है दिव्य माता - आप शक्ति और करुणा की मूर्ति हैं',
+            'devi': 'देवी का अर्थ है दिव्य माता - आप शक्ति और करुणा की मूर्ति हैं',
+            'लक्ष्मी': 'लक्ष्मी का अर्थ है धन की देवी - आप समृद्धि की साक्षात मूर्ति हैं',
+            'lakshmi': 'लक्ष्मी का अर्थ है धन की देवी - आप समृद्धि की साक्षात मूर्ति हैं',
+            'सरस्वती': 'सरस्वती का अर्थ है ज्ञान की देवी - आप विद्या और बुद्धि की प्रतीक हैं',
+            'saraswati': 'सरस्वती का अर्थ है ज्ञान की देवी - आप विद्या और बुद्धि की प्रतीक हैं',
+            'पार्वती': 'पार्वती का अर्थ है पर्वतराज की पुत्री - आप शिव की अर्धांगिनी हैं',
+            'parvati': 'पार्वती का अर्थ है पर्वतराज की पुत्री - आप शिव की अर्धांगिनी हैं',
+            'प्रिया': 'प्रिया का अर्थ है प्रिय और प्यारी - आप सबको प्रिय हैं',
+            'priya': 'प्रिया का अर्थ है प्रिय और प्यारी - आप सबको प्रिय हैं',
+            'अंजलि': 'अंजलि का अर्थ है अर्पण और दिव्य भेंट - आप पवित्रता की प्रतीक हैं',
+            'anjali': 'अंजलि का अर्थ है अर्पण और दिव्य भेंट - आप पवित्रता की प्रतीक हैं',
+            'काव्या': 'काव्या का अर्थ है काव्य - आप काव्य की तरह सुंदर हैं',
+            'kavya': 'काव्या का अर्थ है काव्य - आप काव्य की तरह सुंदर हैं',
+            'ईशा': 'ईशा का अर्थ है देवी और रक्षिका - आप दिव्य स्त्री शक्ति हैं',
+            'isha': 'ईशा का अर्थ है देवी और रक्षिका - आप दिव्य स्त्री शक्ति हैं',
+            'अदिति': 'अदिति का अर्थ है असीम और देवों की माता - आप अनंत हैं',
+            'aditi': 'अदिति का अर्थ है असीम और देवों की माता - आप अनंत हैं',
+            'अनन्या': 'अनन्या का अर्थ है अद्वितीय - आप बेजोड़ और अनूठी हैं',
+            'ananya': 'अनन्या का अर्थ है अद्वितीय - आप बेजोड़ और अनूठी हैं',
+            'श्रुति': 'श्रुति का अर्थ है पवित्र ग्रंथ और संगीत - आप दिव्य और मधुर हैं',
+            'shruti': 'श्रुति का अर्थ है पवित्र ग्रंथ और संगीत - आप दिव्य और मधुर हैं',
+            'पूजा': 'पूजा का अर्थ है आराधना और भक्ति - आप श्रद्धा की मूर्ति हैं',
+            'pooja': 'पूजा का अर्थ है आराधना और भक्ति - आप श्रद्धा की मूर्ति हैं',
+            'रिया': 'रिया का अर्थ है गायिका - आप संगीत की तरह मधुर हैं',
+            'riya': 'रिया का अर्थ है गायिका - आप संगीत की तरह मधुर हैं',
+            'निशा': 'निशा का अर्थ है रात्रि - आप रहस्यमय और शांत हैं',
+            'nisha': 'निशा का अर्थ है रात्रि - आप रहस्यमय और शांत हैं',
+            'माया': 'माया का अर्थ है भ्रम और सृष्टि की दिव्य शक्ति - आप सृजन की शक्ति हैं',
+            'maya': 'माया का अर्थ है भ्रम और सृष्टि की दिव्य शक्ति - आप सृजन की शक्ति हैं',
+            'तारा': 'तारा का अर्थ है तारा - आप प्रकाशमान और चमकीली हैं',
+            'tara': 'तारा का अर्थ है तारा - आप प्रकाशमान और चमकीली हैं',
+            'राधा': 'राधा का अर्थ है समृद्धि - आप कृष्ण की प्रिया हैं',
+            'radha': 'राधा का अर्थ है समृद्धि - आप कृष्ण की प्रिया हैं',
+            'सीता': 'सीता का अर्थ है हल रेखा - आप पवित्रता और समर्पण की प्रतीक हैं',
+            'sita': 'सीता का अर्थ है हल रेखा - आप पवित्रता और समर्पण की प्रतीक हैं',
+            'मीरा': 'मीरा का अर्थ है भक्त - आप दिव्य प्रेम में लीन हैं',
+            'meera': 'मीरा का अर्थ है भक्त - आप दिव्य प्रेम में लीन हैं',
+            'गौरी': 'गौरी का अर्थ है गोरी और स्वर्णिम - आप पार्वती का ही दूसरा नाम हैं',
+            'gauri': 'गौरी का अर्थ है गोरी और स्वर्णिम - आप पार्वती का ही दूसरा नाम हैं',
+            'ओम': 'ॐ का अर्थ है आदि ध्वनि - आप ब्रह्मांड के सार हैं',
+            'om': 'ॐ का अर्थ है आदि ध्वनि - आप ब्रह्मांड के सार हैं',
+            'जय': 'जय का अर्थ है विजय - आप सत्य की जीत के प्रतीक हैं',
+            'jai': 'जय का अर्थ है विजय - आप सत्य की जीत के प्रतीक हैं',
+            'किरण': 'किरण का अर्थ है प्रकाश की किरण - आप प्रकाशवान हैं',
+            'kiran': 'किरण का अर्थ है प्रकाश की किरण - आप प्रकाशवान हैं',
+            'दीपक': 'दीपक का अर्थ है दीपक और अंधकार का नाश करने वाला - आप ज्योति हैं',
+            'deepak': 'दीपक का अर्थ है दीपक और अंधकार का नाश करने वाला - आप ज्योति हैं',
+            'ज्योति': 'ज्योति का अर्थ है ज्वाला और प्रकाश - आप आंतरिक दीप्ति से भरे हैं',
+            'jyoti': 'ज्योति का अर्थ है ज्वाला और प्रकाश - आप आंतरिक दीप्ति से भरे हैं',
+            'भक्ति': 'भक्ति का अर्थ है भगवद्भक्ति - आप शुद्ध आध्यात्मिक प्रेम हैं',
+            'bhakti': 'भक्ति का अर्थ है भगवद्भक्ति - आप शुद्ध आध्यात्मिक प्रेम हैं',
+            'शक्ति': 'शक्ति का अर्थ है दिव्य ऊर्जा और सामर्थ्य - आप शक्ति की देवी हैं',
+            'shakti': 'शक्ति का अर्थ है दिव्य ऊर्जा और सामर्थ्य - आप शक्ति की देवी हैं',
+            'शांति': 'शांति का अर्थ है परम शांति - आप सुकून और शांति की प्रतीक हैं',
+            'shanti': 'शांति का अर्थ है परम शांति - आप सुकून और शांति की प्रतीक हैं',
+            'आनंद': 'आनंद का अर्थ है परम आनंद - आप सर्वोच्च प्रसन्नता हैं',
+            'anand': 'आनंद का अर्थ है परम आनंद - आप सर्वोच्च प्रसन्नता हैं',
+            'प्रेम': 'प्रेम का अर्थ है दिव्य प्रेम - आप स्नेह और करुणा से भरे हैं',
+            'prema': 'प्रेम का अर्थ है दिव्य प्रेम - आप स्नेह और करुणा से भरे हैं',
+            'दीपाली': 'दीपाली का अर्थ है दीपों की पंक्ति - आप प्रकाश और उत्सव की प्रतीक हैं',
+            'deepali': 'दीपाली का अर्थ है दीपों की पंक्ति - आप प्रकाश और उत्सव की प्रतीक हैं',
+            'दिनेश': 'दिनेश का अर्थ है दिन का स्वामी, सूर्य - आप तेजस्वी और प्रकाशमान हैं',
+            'dinesh': 'दिनेश का अर्थ है दिन का स्वामी, सूर्य - आप तेजस्वी और प्रकाशमान हैं',
+            'यश': 'यश का अर्थ है कीर्ति और प्रसिद्धि - आप सफलता और सम्मान के योग्य हैं',
+            'yash': 'यश का अर्थ है कीर्ति और प्रसिद्धि - आप सफलता और सम्मान के योग्य हैं',
+            'मिनी': 'मिनी का अर्थ है मीन राशि, मछली - आप कोमल और सुंदर हैं',
+            'mini': 'मिनी का अर्थ है मीन राशि, मछली - आप कोमल और सुंदर हैं',
+            'पार्व': 'पार्व का अर्थ है पर्वत से संबंधित, पार्वती का रूप - आप दृढ़ और पवित्र हैं',
+            'parv': 'पार्व का अर्थ है पर्वत से संबंधित, पार्वती का रूप - आप दृढ़ और पवित्र हैं',
+            'मुदित': 'मुदित का अर्थ है प्रसन्न और आनंदित - आप हर्ष और उल्लास से भरपूर हैं',
+            'mudit': 'मुदित का अर्थ है प्रसन्न और आनंदित - आप हर्ष और उल्लास से भरपूर हैं',
+            'प्रशांत': 'प्रशांत का अर्थ है शांत और स्थिर - आप गंभीर और धैर्यवान हैं',
+            'prashant': 'प्रशांत का अर्थ है शांत और स्थिर - आप गंभीर और धैर्यवान हैं'
+        };
+
+        var genericBlessings = [
+            'आपका नाम ब्रह्मांड की दिव्य ऊर्जा से परिपूर्ण है',
+            'आप ईश्वर की कृपा से सुरक्षित हैं',
+            'ब्रह्मांड आपके पवित्र अस्तित्व को स्वीकार करता है',
+            'आपकी आत्मा दिव्य प्रकाश से जगमगाती है',
+            'आप कृपा द्वारा प्रकाशित पथ पर चलते हैं'
+        ];
+
+        var currentDance = 0;
+        var danceInterval = null;
+
+        function generateBlessing(name, meaning) {
+            var templates = [
+                name + ', ' + meaning + '। भगवान शिव का तीसरा नेत्र आपके मार्ग को ज्ञान और स्पष्टता से प्रकाशित करे। माता पार्वती की कृपा से आप जीवन में नृत्य करें। ॐ नमः शिवाय।',
+                'प्रिय ' + name + ', ' + meaning + '। हम आपको हिमालय जैसी शक्ति और गंगा जैसा प्रवाह प्रदान करते हैं। भगवान शिव और माता पार्वती की कृपा सदा आप पर बनी रहे। हर हर महादेव!',
+                name + ', ' + meaning + '। नटराज का दिव्य नृत्य आपकी आत्मा को जागृत करे। माता पार्वती का प्रेम सदा आपकी रक्षा करे। जय भोलेनाथ!',
+                'आदरणीय ' + name + ', ' + meaning + '। इस महाशिवरात्रि पर समृद्धि, स्वास्थ्य और आध्यात्मिक जागरण के लिए हमारा आशीर्वाद स्वीकार करें। ॐ नमः शिवाय।',
+                name + ', ' + meaning + '। ध्यान में शांति और भक्ति में आनंद पाएं। परमात्मा आपके भीतर निवास करते हैं। हर हर महादेव!'
+            ];
+            return templates[Math.floor(Math.random() * templates.length)];
+        }
+
+        function startDancing() {
+            var scene = document.getElementById('divine-scene');
+            
+            function changeDance() {
+                scene.className = 'divine-container';
+                currentDance = (currentDance % 4) + 1;
+                scene.classList.add('dance-' + currentDance);
+            }
+            
+            changeDance();
+            
+            if (danceInterval) {
+                clearInterval(danceInterval);
+            }
+            danceInterval = setInterval(changeDance, 3000);
+        }
+
+        function stopDancing() {
+            var scene = document.getElementById('divine-scene');
+            scene.className = 'divine-container';
+            
+            if (danceInterval) {
+                clearInterval(danceInterval);
+                danceInterval = null;
+            }
+            currentDance = 0;
+        }
+
+        function getBlessing() {
+            var nameInput = document.getElementById('user-name');
+            var name = nameInput.value.trim();
+            
+            if (!name) {
+                alert('कृपया अपना नाम दर्ज करें!');
+                return;
+            }
+            
+            var cleanName = name.toLowerCase();
+            var meaning = nameMeanings[cleanName];
+            
+            var blessing;
+            if (meaning) {
+                blessing = generateBlessing(name, meaning);
+            } else {
+                var genericBlessing = genericBlessings[Math.floor(Math.random() * genericBlessings.length)];
+                blessing = name + ', ' + genericBlessing + '। भगवान शिव और माता पार्वती की कृपा सदा आप पर बनी रहे। ॐ नमः शिवाय!';
+            }
+            
+            document.getElementById('blessing-text').innerText = blessing;
+            document.getElementById('form-section').classList.add('hidden');
+            document.getElementById('blessing-section').classList.add('show');
+            
+            startDancing();
+        }
+
+        function reset() {
+            document.getElementById('form-section').classList.remove('hidden');
+            document.getElementById('blessing-section').classList.remove('show');
+            document.getElementById('user-name').value = '';
+            stopDancing();
+        }
+
+        function createParticles() {
+            var particlesContainer = document.getElementById('particles');
+            var symbols = ['ॐ', '卍']; // Om and Swastik symbols
+            var classes = ['om', 'swastik'];
+            
+            for (var i = 0; i < 30; i++) {
+                var particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Randomly choose Om or Swastik
+                var randomIndex = Math.floor(Math.random() * 2);
+                particle.innerText = symbols[randomIndex];
+                particle.classList.add(classes[randomIndex]);
+                
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        window.onload = function() {
+            createParticles();
+        };
+    </script>
+</body>
+</html>
